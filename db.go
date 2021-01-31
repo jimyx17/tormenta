@@ -24,7 +24,7 @@ type Options struct {
 var DefaultOptions = Options{
 	SerialiseFunc:   json.Marshal,
 	UnserialiseFunc: json.Unmarshal,
-	BadgerOptions:   badger.DefaultOptions,
+	BadgerOptions:   badger.DefaultOptions("dbtormenta"),
 	DebugMode:       false,
 }
 
